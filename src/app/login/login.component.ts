@@ -33,6 +33,7 @@ export class LoginComponent {
       alert(res);
     });
     //console.log(this.loginForm);
+    
   }
 
 }
