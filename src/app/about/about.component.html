@@ -1,0 +1,19 @@
+<h3>about works!</h3>
+
+<form #userpost ="ngForm" (ngSubmit) ="CallPostAPI(userpost.value)">
+    <input typre="text" ngModel name="id" placeholder="Enter id.."> <br/><br/>
+    <input typre="text" ngModel name="name" placeholder="Enter name.."> <br/><br/>
+    <input typre="text" ngModel name="age" placeholder="Enter age.."> <br/><br/>
+    <button>Submit</button>
+</form>
+
+<h3>----------------------------------------------------------</h3>
+
+<ul *ngFor = "let item of DetailToShow ">
+    <li>
+        {{item.name}}
+    </li>
+    <li>
+        {{item.age}}
+    </li>
+</ul>
